@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="/css/pqrs.css">
+    <link rel="shortcut icon" href="/assets/logo iub.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <a href="https://www.unibarranquilla.edu.co/" target="_blank">
+                <img src="/assets/logo-itsa.png" alt="Logo de la IUB">
+            </a>
+        </div>
+        <nav class="header-2">
+            <a href="../index.html" class="sub">Inicio</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>PQRS - Peticiones, Quejas, Reclamos y Sugerencias</h1>
+            <p>En Unibarranquilla valoramos tu opinión. Por favor, completa el siguiente formulario para hacernos llegar tus Peticiones, Quejas, Reclamos o Sugerencias.</p>
+
+            <form action="" method="post">
+                <label for="tipo">Tipo de PQRS:</label>
+                <select id="tipo" name="tipo">
+                    <option value="peticion">Petición</option>
+                    <option value="queja">Queja</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Motivo:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar PQRS</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

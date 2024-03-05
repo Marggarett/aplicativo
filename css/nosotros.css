@@ -1,0 +1,120 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-img img {
+    height: 50px;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative; 
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4e9ae0;
+    top: 100%; 
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_saludMental {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.img_saludMental img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.img_saludMental:hover img {
+    transform: scale(1.2);
+}
+
+.textt {
+    flex: 1;
+    text-align: justify;
+    margin-top: -32px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav .sub {
+    font-weight: bold;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #4e9ae0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #3568a9;
+}
+
